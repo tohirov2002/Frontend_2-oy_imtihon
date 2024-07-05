@@ -1,0 +1,98 @@
+
+.logo__bumerg{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 21px;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.logo__list{
+    display: flex;
+    align-items: center;
+    margin-left: 58px;
+}
+.logo__item + .logo__item{
+    margin-left: 32px;
+}
+.logo__item{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+.logo__button{
+    font-family: 'Space Mono', monospace;   
+    background: #FCB72B;
+    width: 180px;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+.logo__button1{
+    font-family: 'Space Mono', monospace;   
+    background: #FCB72B;
+    width: 180px;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+.logo__button:hover{
+   background-color: #FFFFFF;
+   border: 3px solid #fcb72b;
+   border-radius: 5px;
+   color: #fcb72b;
+}
+.logo__button1:hover{
+   background-color: #FFFFFF;
+   border: 3px solid #fcb72b;
+   border-radius: 5px;
+   color: #fcb72b;
+}
+@media only screen and (max-width:637px) {
+   .logo__list{
+    display: none;
+   }
+   .logo__button1{
+    display: none;
+   }
+   .logo__img{
+    display: flex;
+    align-items: center;
+   }
+}
+@media only screen and (max-width:637px) {
+   .logo__list{
+    display: none;
+   }
+   .logo__button{
+    display: none;
+   }
+   .logo__img{
+    display: flex;
+    align-items: center;
+   }
+}
+@media only screen and (max-width:637px) {
+    .logo__bumerg{
+        display: block;
+        margin-left: 30px;
+    }
+    .logo__scoot{
+        margin-left: 140px;
+    }
+}

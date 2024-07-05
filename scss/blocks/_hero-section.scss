@@ -1,0 +1,194 @@
+.hero-section{
+    background-image:  url("../images/hero-img.jpg");
+    background-position: right top;
+    background-size: cover;
+    position: relative;
+}
+.hero-section::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/hero-right.svg');
+    width: 207px;
+    height: 40px;
+    background-position: right top;
+    top: 341px;
+    left: -20px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.hero__title{
+    padding-bottom: 152px;
+}
+.hero__title > h1{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    padding-top: 153px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    width: 500px;
+    margin-bottom: 42px;
+}
+.hero__title > p{
+    max-width: 405px;
+    margin-left: 95px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.hero__title::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/left-sterilka.svg'),;
+    background-repeat: no-repeat;
+    bottom: calc(50% - 170px);
+    right: calc(50% - 440px);
+    width: 457px;
+    height: 158px;
+}
+.hero__button > button{
+    font-family: 'Space Mono', monospace;   
+    background: #FCB72B;
+    width: 180px;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 95px;
+}
+.hero__button > button:hover{
+    background-color: #FFFFFF;
+    border: 3px solid #fcb72b;
+    border-radius: 5px;
+    color: #fcb72b;
+}
+@media only screen and (max-width:768px) {
+    .hero-section{
+        background-image:  url("../images/hero-img.jpg");
+        background-position: right top;
+        background-size: cover;
+        position: relative;
+    }
+    .hero-section::after{
+        background-image: url('../images/hero-right.svg'), url("../images/hero-img.jpg");
+        background-size: 0px,100% 100%;
+        background-repeat: no-repeat;
+        background-position: calc(50% - 650px) calc(20% + 213px) , calc(50%) right top;
+        object-fit: cover;
+        position: absolute;
+    }
+    .hero__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 217px;
+    }
+    .hero__title > h1{
+        width: 573px;
+        text-align: center;
+    }
+    .hero__title > p{
+        margin-left: 0;
+        width: 573px;
+        text-align: center;
+    }
+    .hero__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__button > button{
+        margin-left: 0px;
+    }
+    .hero__title::after{
+        position: absolute;
+        content: "";
+        background-image: url('../images/left-sterilka.svg'),;
+        background-repeat: no-repeat;
+        bottom: calc(50% - 339px);
+        left: calc(50% - 472px);
+        width: 457px;
+        height: 158px;
+    }
+}
+@media only screen and (max-width:1079px) {
+    .hero__title::after{
+        position: absolute;
+        content: "";
+        background-image: url('../images/left-sterilka.svg'),;
+        background-repeat: no-repeat;
+        bottom: calc(50% - 339px);
+        left: calc(50% - 472px);
+        width: 457px;
+        height: 158px;
+    }
+    .hero-section::after{
+        position: absolute;
+        content: "";
+        background-image: url('../images/hero-right.svg');
+        width: 0px;
+        height: 0px;
+        top: 341px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .hero__title{
+        padding-bottom: 200px;
+    }
+}
+@media only screen and (max-width:1380px) {
+    .hero-section::after{
+        position: absolute;
+        content: "";
+        background-image: url('../images/hero-right.svg');
+        width: 0px;
+        height: 0px;
+        top: 341px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .hero__title > p{
+        margin-left: 0;
+        width: 573px;
+    }
+    .hero__button > button{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width:544px) {
+    .hero__title > h1{
+        width: 311px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;
+        color: #FFFFFF;
+    }
+    .hero__title > p{
+        width: 311px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .hero__title::after{
+        position: absolute;
+        content: "";
+        background-image: url('../images/left-sterilka.svg'),;
+        background-repeat: no-repeat;
+        bottom: calc(50% - 339px);
+        left: calc(50% - 558px);
+        width: 457px;
+        height: 158px;
+    }
+}

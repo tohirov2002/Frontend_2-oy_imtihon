@@ -1,0 +1,26 @@
+.site__article{
+    background-image:  url("../images/article-img.png");
+    background-position: right top;
+    background-size: cover;
+    position: relative;
+    padding: 72px 0;
+}
+.article__text{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:420px) {
+    .site__article{
+        background-image:  url("../images/Bitmap.jpg");
+        background-position: right top;
+        background-size: cover;
+        position: relative;
+        padding: 72px 0;
+    }
+    .article__text{
+        text-align: center;
+    }
+}

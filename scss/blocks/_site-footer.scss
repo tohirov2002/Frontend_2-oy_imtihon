@@ -1,0 +1,107 @@
+.site__footer{
+    padding: 102px 0;
+    position: relative;
+    z-index: -1;
+}
+.site__footer{
+    background-image:  url("../images/Mask.png");
+    background-position: right top;
+    background-size: cover;
+    position: relative;
+}
+    .footer__logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__logo > h1{
+        width: 415px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    .footer__item{
+        width: 159px;
+        padding: 9px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: #E5ECF4;
+        border-radius: 4px;
+    }
+    .footer__item + .footer__item{
+        margin-left: 18px;
+    }
+    .item__text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .item__text > p{
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;  
+        color: #495567;
+    }
+    .item__text > h4{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;   
+        color: #495567;
+    }
+    .footer__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media only screen and (max-width:768px) {
+        .footer__logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 62px 0;
+        }
+        .footer__logo > h1{
+            text-align: center;
+            width: 457px;
+            margin-bottom: 44px;
+        }
+        .site__footer{
+            background-image:  url("../images/Mask.png");
+            background-position: right top;
+            background-size: cover;
+            position: relative;
+        }
+    }
+    @media only screen and (max-width:577px) {
+        .footer__logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 88px 0;
+        }
+        .footer__logo > h1{
+            text-align: center;
+            width: 311px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;
+            color: #FFFFFF;
+        }
+        .site__footer{
+            background-image:  url("../images/Mask.png");
+            background-position: right top;
+            background-size: cover;
+            position: relative;
+        }
+    }
